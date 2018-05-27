@@ -1,6 +1,5 @@
 <template>
   <div id="app" class="container-fluid">
-    <!-- <img src="./assets/logo.png"> -->
     <!-- <HelloWorld/> -->
     <div class="row">
       <div class="col">

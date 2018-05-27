@@ -1,6 +1,8 @@
 <template>
     <div id="lnb" class="lngarea">
         {{ message }}
+        <router-link to="/Home">Home</router-link>
+        <router-link to="/List">List</router-link>       
     </div>
 </template>
 

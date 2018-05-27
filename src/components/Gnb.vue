@@ -1,6 +1,7 @@
 <template>
     <div id="gnb" class="gnbarea">
         <div class="jumbotron text-center" style="margin-bottom:0">
+            <img src="../assets/logo.png">
             <h1>{{ message }}</h1>
             <p>Resize this responsive page to see the effect!</p> 
         </div>

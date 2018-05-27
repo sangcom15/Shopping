@@ -1,7 +1,8 @@
 <template>
     <div id="contents" class="contentsarea">
         {{ message }}
-        <button type="button" class="btn btn-primary">BUTTON</button>
+        <router-view></router-view>
+        <!-- <button type="button" class="btn btn-primary">BUTTON</button>
         <div class="container" style="margin-top:30px">
             <div class="row">
                 <div class="col-sm-4">
@@ -41,7 +42,7 @@
                 <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </template>
 
