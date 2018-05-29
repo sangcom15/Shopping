@@ -2,6 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
+//import Router from './router'
 import VueRouter from 'vue-router'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -32,16 +33,9 @@ require('./assets/js/gallery/jquery.infinitescroll.min.js')
 require('./assets/js/gallery/main.js')
 require('./assets/js/jquery.nicescroll.min.js')
 
-
-
-
 Vue.config.productionTip = false
 
-
 Vue.use(VueRouter)
-
-//const Home = { template: '<div>foo</div>' }
-//const List = { template: '<div>bar</div>' }
 const routes = [
   { path: '/Home', component: Home },
   { path: '/List', component: List }
@@ -51,11 +45,16 @@ const router = new VueRouter({
 })
 
 
+require('./router/server.js')
+
+
+
 
 /* eslint-disable no-new */
 const app = new Vue({
   el: '#app',
+  router,
+  //Router,
   components: { App },
-  template: '<App/>',
-  router
+  template: '<App/>'
 })
